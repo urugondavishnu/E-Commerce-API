@@ -5,20 +5,17 @@ This is a Spring Boot-based backend for an e-commerce platform. It provides secu
 ## Features
 
 - JWT-based authentication with Spring Security
-- MongoDB Atlas for database integration
+- MySQL for database integration
 - Product and Category management
 - Role-based access control
 - Flyway database migrations
-- Integration with external APIs
-- Logging with Logback
-- Deployed to AWS
 
 ## Tech Stack
 
 - Java 17
 - Spring Boot
 - Spring Security
-- MongoDB Atlas
+- MySQL
 - Flyway
 - Maven
 - Postman (API testing)
