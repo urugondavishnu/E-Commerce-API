@@ -3,17 +3,17 @@ package com.codewithmosh.store.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
+@Builder //for builder methods
+@AllArgsConstructor // constructor with all args
+@NoArgsConstructor//constructor without any args
+@ToString // .toString() method is establishes
 @Getter
 @Setter
-@Entity
+@Entity // java class as database entity
 @Table(name = "addresses")
 public class Address {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id //primary key for a table
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //tells the persistence provider (like Hibernate) to auto-generate the primary key using the database’s auto-increment feature.
     @Column(name = "id")
     private Long id;
 
