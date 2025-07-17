@@ -1,19 +1,33 @@
-# The Ultimate Spring Boot Course
+# E-Commerce RESTful API
 
-This repository contains the starter project for Part 2 of my Spring Boot course:
+This is a Spring Boot-based backend for an e-commerce platform. It provides secure and efficient RESTful APIs for managing products, categories, users, and orders.
 
-[https://codewithmosh.com/p/spring-boot-building-apis](https://codewithmosh.com/p/spring-boot-building-apis)
+## Features
 
-## About this Repository 
+- JWT-based authentication with Spring Security
+- MongoDB Atlas for database integration
+- Product and Category management
+- Role-based access control
+- Flyway database migrations
+- Integration with external APIs
+- Logging with Logback
+- Deployed to AWS
 
-This project is based on the final project from Part 1 of the course, but I’ve cleaned it up and removed unnecessary playground code so we can focus on building APIs in Part 2.
+## Tech Stack
 
-You’ll be cloning this repository and coding along with me as we extend the project.
+- Java 17
+- Spring Boot
+- Spring Security
+- MongoDB Atlas
+- Flyway
+- Maven
+- Postman (API testing)
+- IntelliJ IDEA
 
-To get started, clone the repository to your local machine:
+## Getting Started
 
-```sh
-git clone https://github.com/mosh-hamedani/spring-api-starter
+### Clone the repository
 
-cd spring-api
-```
+```bash
+git clone https://github.com/urugondavishnu/E-Commerce-RESTFUL_API.git
+cd E-Commerce-RESTFUL_API
