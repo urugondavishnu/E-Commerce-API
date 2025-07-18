@@ -31,17 +31,16 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
 
         var token = authHeader.replace("Bearer ", "");
+        var jwt = jwtService.parseToken(token);
 
-        if(!jwtService.validateToken(token)){
+        if(jwt == null || jwt.isExpired()){
             filterChain.doFilter(request,response);
             return;
         }
-        var role = jwtService.getRoleFromToken(token);
-        var userId = jwtService.getUserIdFromToken(token);
         var authentication = new UsernamePasswordAuthenticationToken(
-                userId,
+                jwt.getUserId(),
                 null,
-                List.of(new SimpleGrantedAuthority("ROLE_" + role))
+                List.of(new SimpleGrantedAuthority("ROLE_" + jwt.getRole()))
         ); // of two types. One for login(Unauthorized) with two arguments and second with three arguments for authorized.
 
         authentication.setDetails(
