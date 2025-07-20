@@ -1,4 +1,4 @@
-# E-Commerce RESTful API
+# E-Commerce API
 
 A fully functional E-Commerce backend API built with Spring Boot, featuring user authentication, product management, cart functionality, and order processing.
 
